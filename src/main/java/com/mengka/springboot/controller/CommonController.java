@@ -21,6 +21,13 @@ public class CommonController {
     @Autowired
     private BookDOMapper bookDOMapper;
 
+    /**
+     *  http://127.0.0.1:8129/spring-boot/v1/rate
+     *
+     * @param model
+     * @param id
+     * @return
+     */
     @RequestMapping("/rate")
     public String product(Map<String, Object> model, Long id){
         log.info("CommonController rate id = {}",id);
